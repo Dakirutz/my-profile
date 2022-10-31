@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+	padding:0px;
+	margin:0px;
+}
+html{
+	overflow:hidden;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	overflow: auto;
+    height: 100vh;
+    width: 100%;
+}
+
+img.profile{
+	margin-top: -80px;
+	border-radius:100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 150px;
+  	display: block;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border: 3px solid white;
+	margin-bottom: 15px;
+}
+
+div{
+	background: white;
+}
+
+div.section{
+	padding: 40px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius:10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	margin-top: 80px;
+}
+
+div.footer{
+	padding: 40px;
+	width: calc(100% - 80px);
+	margin-top: 80px;
+	background:rgb(255 255 255 / 60%);
+}
+
+
+div.firstSection{
+	margin-top:100px;
+}
+
+div.videoItem{
+	display:flex;
+	flex-direction: row;
+}
+div.videoItem div:first-child{
+	min-width: 40%;
+	margin-right: 20px;
+}
+
+
+
+
+h1 {
+	font-size:32px;
+	color:#b80081;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size:24px;
+	color:#230052;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+a {
+	color:#b60092;
+}
+
+a:hover{
+	color:#7a0062;
+}
+
+.textlist{
+	padding-left:20px;
+	    list-style-type: none;
+
+}
+
+.textlist li{
+	padding:5px;
+}
+
+.fa-yellow li .fa-li{
+	color:#e8ba05;
+}
+
+.codeIcons{
+	font-size: 50px;
+	color:grey;
+}
+
+.codeIcons li{
+	padding:10px;
+}
+
+.inlinelist{
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+	list-style: none;
+	margin-top:25px;
+}
+
+.inlinelist li{
+	display: inline-block;
+}
+
+@media only screen and (min-width:801px) and (max-width:1200px) {
+	div.section{
+		max-width: 80vw;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	div.videoItem {
+		flex-direction: column-reverse;
+	}
+	div.videoItem div:first-child{
+		min-width: 100%;
+		margin-right: 0px;
+	}
+
+	div.section{
+		max-width: 70vw;
+	}
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
